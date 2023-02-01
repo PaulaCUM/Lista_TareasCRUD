@@ -4,18 +4,18 @@ import { Task } from '../models/tasks';
 const TasksList = [
   {
     'id' : 1,
-    'title' : 'Hacer tarea',
-    'description' : 'La tarea es extensa pero fructífera'
+    'title' : 'Ir a la lavandería',
+    'description' : 'Llevar camisa y pantalon'
   },
   {
     'id' : 2,
     'title' : 'Hacer ejercicio',
-    'description' : 'Hoy la rutina es de tren superior'
+    'description' : 'Asistir al GYM para entrenar en la tarde'
   },
   {
     'id' : 3,
-    'title' : 'Comprar café',
-    'description' : 'El café del desayuno se acabó esta mañana'
+    'title' : 'Lista de compras',
+    'description' : 'Comprar leche, café, huevos y pan'
   }
 ]
 

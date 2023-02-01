@@ -20,14 +20,19 @@ export class NewTaskComponent {
 
   addTask(){
     // console.log("Pronto enviaremos la nueva tarea: ", this.newTask)
-    this.listServ.addTask(this.newTask)
-    // Incrementar el id
-    this.myId++;
-    // Reiniciar el objeto "Nueva variable"
-    this.newTask = {
-      id: this.myId, // id: 0
-      title: '',
-      description: ''
+    if (this.newTask.title !== '') {
+      this.listServ.addTask(this.newTask)
+      // Incrementar el id
+      this.myId++;
+      // Reiniciar el objeto "Nueva variable"
+      this.newTask = {
+        id: this.myId, // id: 0
+        title: '',
+        description: ''
+    }
+    }
+    else {
+      alert("Your new task cannot be empty! Please, add at least a title for your new task and try again")
     }
   }
 

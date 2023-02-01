@@ -21,7 +21,9 @@ export class ListTasksComponent implements OnInit {
   }
   
   deleteTask(_id: number) {
+    if(confirm("Are you sure to delete the task?")){
     this.listServ.deleteTask(_id)
+    }
   }
 
   getPositions(_id: number) {
