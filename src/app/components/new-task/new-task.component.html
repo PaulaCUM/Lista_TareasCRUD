@@ -6,15 +6,16 @@
         <form #myForm>
             <div class="form-group">
                 <label for="">Title</label>
-                <input type="text" class="form-control" aria-describedby="title">
+                <input type="text" class="form-control" aria-describedby="title" name="title"
+                [(ngModel)]="newTask.title">                
             </div>
             <div class="form-group">
                 <label for="">Description</label>
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" name="description" [(ngModel)]="newTask.description"></textarea>
             </div>
 
             <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-outline-primary btn-lg mt-3">Send Task</button>
+                <button type="submit" class="btn btn-outline-primary btn-lg mt-3" (click)="addTask()">Send Task</button>
 
             </div>
         </form>
